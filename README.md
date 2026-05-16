@@ -844,8 +844,8 @@ akagi64.exe 61 c:\windows\system32\charmap.exe
      * Implementation: ucmRequestTraceMethod
      * Works from: Windows 11 (26100)
      * AlwaysNotify compatible
-     * Fixed in: unfixed :see_no_evil:
-        * How: -
+     * Fixed in: Windows 11 25H2 (26200)
+        * How: Side effect of Windows changes
       * Code status: added in v3.6.7
 81. Author: R41N3RZUF477
      * Type: Shell API

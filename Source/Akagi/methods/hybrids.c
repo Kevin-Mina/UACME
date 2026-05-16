@@ -395,7 +395,7 @@ BOOL ucmSXSMethodCleanup(
 }
 
 /*
-* ucmxDisemer
+* ucmDisemerMethod
 *
 * Purpose:
 *
@@ -405,7 +405,7 @@ BOOL ucmSXSMethodCleanup(
 * Name is a very original WD behavior signature name.
 *
 */
-NTSTATUS ucmxDisemer()
+NTSTATUS ucmDisemerMethod()
 {
     WCHAR szApplication[MAX_PATH * 2];
     WCHAR szParameters[256];
@@ -489,7 +489,7 @@ NTSTATUS ucmDismMethod(
             ProxyDllSize);
 
         if (NT_SUCCESS(MethodResult)) {
-            MethodResult = ucmxDisemer();
+            MethodResult = ucmDisemerMethod();
         }
 
         //
@@ -1101,7 +1101,7 @@ NTSTATUS ucmJunctionMethod(
                 //
                 // Run target.
                 //
-                MethodResult = ucmxDisemer();
+                MethodResult = ucmDisemerMethod();
 
             }
 
@@ -1216,6 +1216,8 @@ NTSTATUS ucmMsdtMethod(
 * Purpose:
 *
 * Bypass UAC using DotNet Deserialization for eventvwr.
+* 
+* Fixed in Windows 11.
 *
 */
 NTSTATUS ucmDotNetSerialMethod(
@@ -1405,6 +1407,8 @@ NTSTATUS ucmIscsiCplMethod(
 *
 * Bypass UAC by environment variables hijack and dll planting.
 * https://github.com/R41N3RZUF477/RequestTrace_UAC_Bypass
+* 
+* Fixed in Windows 11.
 *
 */
 NTSTATUS ucmRequestTraceMethod(
