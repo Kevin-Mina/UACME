@@ -1,12 +1,12 @@
 /*******************************************************************************
 *
-*  (C) COPYRIGHT AUTHORS, 2015 - 2025
+*  (C) COPYRIGHT AUTHORS, 2015 - 2026
 *
 *  TITLE:       METHODS.C
 *
-*  VERSION:     3.69
+*  VERSION:     3.70
 *
-*  DATE:        07 Jul 2025
+*  DATE:        07 May 2026
 *
 *  UAC bypass dispatch.
 *
@@ -97,7 +97,7 @@ UCM_API_DISPATCH_ENTRY ucmMethodsDispatchTable[UCM_DISPATCH_ENTRY_MAX] = {
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
-    { MethodSXS, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
+    { MethodSXS, { NT_WIN7_RTM, NT_WIN11_21H2 }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodDism, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
@@ -105,14 +105,14 @@ UCM_API_DISPATCH_ENTRY ucmMethodsDispatchTable[UCM_DISPATCH_ENTRY_MAX] = {
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
-    { MethodWow64Logger, { NT_WIN7_RTM, MAXDWORD }, AKATSUKI_ID, FALSE, TRUE, TRUE },
+    { MethodWow64Logger, { NT_WIN7_RTM, NT_WIN11_21H2 }, AKATSUKI_ID, FALSE, TRUE, TRUE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodUiAccess, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodMsSettings, { NT_WIN10_THRESHOLD1, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodTyranid, { NT_WIN8_BLUE, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
-    { MethodJunction, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
-    { MethodSXSDccw, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
+    { MethodJunction, { NT_WIN7_RTM, NT_WIN11_21H2 }, FUBUKI_ID, FALSE, TRUE, TRUE },
+    { MethodSXSDccw, { NT_WIN7_RTM, NT_WIN11_21H2 }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodHakril, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, FALSE, TRUE },
     { MethodCorProfiler, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
@@ -127,13 +127,13 @@ UCM_API_DISPATCH_ENTRY ucmMethodsDispatchTable[UCM_DISPATCH_ENTRY_MAX] = {
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
-    { MethodDirectoryMock, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
+    { MethodDirectoryMock, { NT_WIN7_RTM, NT_WIN11_21H2 }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodShellSdctl, { NT_WIN10_REDSTONE1, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodTokenModUIAccess, { NT_WIN7_RTM, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
-    { MethodEditionUpgradeManager, { NT_WIN10_REDSTONE1, MAXDWORD }, FUBUKI_ID, FALSE, TRUE, TRUE },
+    { MethodEditionUpgradeManager, { NT_WIN10_REDSTONE1, NT_WIN11_21H2 }, FUBUKI_ID, FALSE, TRUE, TRUE },
     { MethodDebugObject, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodDeprecated, { NT_WIN7_RTM, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
     { MethodShellChangePk, { NT_WIN10_REDSTONE1, MAXDWORD }, PAYLOAD_ID_NONE, FALSE, FALSE, FALSE },
